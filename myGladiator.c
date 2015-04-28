@@ -11,7 +11,6 @@
 
 int main(int argc, char *argv[]){
 	PROCTAB* theProc = openproc(PROC_FILLSTATUS);
-	pid_t p;
 	while (1) {
 		proc_t* curP; 
 		while(curP = readproc(theProc, NULL)){
